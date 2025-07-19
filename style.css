@@ -78,3 +78,8 @@ footer {
     text-align: center;
     clear: both;
 }
+body {
+  background-image: url('/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
