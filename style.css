@@ -88,3 +88,8 @@ footer {
     #fff 75%);
   background-size: 40px 40px;
 }
+body {
+  background-image: url('/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
