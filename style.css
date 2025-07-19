@@ -2,59 +2,61 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: white;
-}
-header import styles from './Header.module.css'; // adjust path if needed
-import Image from 'next/image';
-import Link from 'next/link';
-
-export default function Header() {
-  return (
-    <header className={styles.header}>
-      <Link href="/">
-        <a className={styles.logo}>
-          <Image
-            src="/guys-logo.jpeg"
-            alt="Guy's Motorsports Logo"
-            width={160}
-            height={80}
-            priority
-          />
-        </a>
-      </Link>
-
-      <nav className={styles.nav}>
-        <Link href="/schedule"><a>Schedule</a></Link>
-        <Link href="/live"><a>Live Stream</a></Link>
-        <Link href="/shop"><a>Shop</a></Link>
-      </nav>
-    </header>
-  );
-}
-header h1 {
-    color: #ff0000;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.hero, .content {
-    padding: 20px;
-    text-align: center;
-}
-footer {
     background-color: #000;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+    color: #fff;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-image: url('BACKGROUND_IMAGE.jpg');
+    background-size: cover;
+}
+
+.call-to-action button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe {
+    background-color: red;
+    color: #fff;
+}
+
+.next-race, .why-subscribe, .racing-series {
