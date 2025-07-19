@@ -2,36 +2,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #f0f0f0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #333;
+    color: #fff;
     padding: 1em;
-    background-color: #000;
+    text-align: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+header .logo {
+    margin-bottom: 10px;
 }
 
-.logo img {
+header .logo img {
     height: 50px;
-    margin-right: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav a {
@@ -40,10 +38,17 @@ nav a {
 }
 
 .hero {
-    text-align: center;
-    padding: 2em;
-    background-image: url('BACKGROUND_IMAGE.jpg');
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
 }
 
 .call-to-action button {
@@ -60,3 +65,16 @@ nav a {
 }
 
 .next-race, .why-subscribe, .racing-series {
+    padding: 2em;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
